@@ -1,0 +1,59 @@
+->package.json- is the configuration for npm
+it keeps track on what version is installed into our system
+->npm- is not node package manager it is just package manager
+
+when we are installing we are installing 2 types of dependencies
+1.dev dependencies- generallly require in a development phase/Required only for development (not included in production builds).
+2.Normal dependencies-Required for running the app.
+
+Type	Used in Production?	Used in Development?	Installed with npm install?
+dependencies	✅ Yes	✅ Yes	✅ Yes
+devDependencies	❌ No	✅ Yes	✅ Yes
+#need google more about this in  google
+
+~(tilde)-it allows only patch version upgrades and more restrictive
+^(caret)-it allows both patch and minor version upgrades.
+
+-package-lock.json- it keeps track on what exact version is installed
+
+we should not push node modules into git or production
+if we have package.json and packagelock.json we can regenrate the all node modules by using npn install
+
+npx-executing the package.
+
+CDN way is not the prefered way to bring react and react dom into project.
+
+what the things parcel is doing
+Parcel-
+-dev build
+-local server
+-HMR=Hot module replcement(means it will autmaticlly refresh and replce the changes done in files)
+it is watching all the files ung HMR
+-File Watching algorithm-is written in c++.
+-Caching-faster builds
+-Image Optimization
+-Minificaton
+-Bundling
+-Compress
+-Consistent hashing
+-Code Splitting
+-Differential Bundling
+-Diagonstics
+-Error handling
+-HTTPs
+-Tree Shaking-removeing unused Code
+-Diff dev and production bundles
+
+bundle is responsible for optimising the app performance.
+
+
+To create production build you need to use- "npx parcel build index.html"
+you will encounter error  becoz in package.json you given main as App.js which is different
+so you need to remove that line and  run the command again
+
+
+
+
+
+
+

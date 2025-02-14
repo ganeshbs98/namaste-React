@@ -1,0 +1,32 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "\"this is namaste by ganesh\"",
+  "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganeshbs98/namaste-React.git"
+  },
+  "keywords": [],
+  "author": "ganesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ganeshbs98/namaste-React/issues"
+  },
+  "homepage": "https://github.com/ganeshbs98/namaste-React#readme",
+  "devDependencies": {
+    "parcel": "~2.13.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserlist":[
+    "last 2 versions"
+  ]
+  
+}

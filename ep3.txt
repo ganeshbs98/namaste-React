@@ -1,0 +1,62 @@
+running the script command changes
+in package.json file-
+in script object
+we need to change
+here we can give the name what we want and the value should be the correct command in 
+ "start":"parcel index.html",
+    "build":"parcel build index.html",
+
+
+React.createElement("div",{},"...children")==> it is nothing but an Object=> when you render it will be con verted into html content.
+
+JSX-is a javascript syntax which is easier to create react element.it is not a part of react. it is html like syntax.
+there is difference between react and JSX.
+
+JSX=is not HTML in JS.it is html like/XML like syntax.
+
+both JSX code and pure reactelement code returns object type data.
+later in render it will convert into js emgine code language.
+
+
+the JSX code is converted(transpiling) into ecma code of or browser by bable which is present in the bundler(webpack,parcel,vite) which understands for js engine.
+
+jsx is transpiled into reactElement then it is cinvert in html for es6 code for js engine.
+
+JSX=>React.createElement=>Reactelement(object)=>htmlelement -->this is done by bable
+bable- it converts jsx code into react element.
+
+note:
+->If you have to write attributes it should be camelcase.(className,tabIndex....)
+React Components
+-> Class based component-OLD WAY
+-> Functional based Component-NEW Way
+
+React Functional Component- just a normal js function
+-a fucntion which is returning some jsx element it called functional based component.
+
+
+Scenario	Syntax	Example
+Returning JSX (React elements)	return (...)	✅ return (<div>Hello</div>);
+Returning Objects	return {...}	✅ return { name: "John" };
+Implicit JSX return in arrow function	()=> (...)	✅ const Comp = () => (<h1>Hi</h1>);
+Implicit Object return in arrow function	()=> ({...})	✅ const getUser = () => ({ name: "Alice" });
+
+component composition- component inside component is called component composition.
+example:-
+const Title=()=>(<h1 id="head1" className="head">Hello react with JSX</h1>)
+const Heading1=()=>(
+  <div id="container">
+    <Title/>
+   <h1 className="head2">Namaste  React Functional Component</h1>
+
+  </div>
+)
+const root=ReactDOM.createRoot(document.getElementById("root"))
+root.render(<Heading1/>)
+
+if i want to used react element in the function component just {} idna use maddre aytu inside {} u can use any js expression or code it will just print the output of that code.
+
+
+crosssite Scripting-executing some js code in my browser and he can able to get/access the cookies or local storage data. 
+
+but jsx takes care of this injection attacks.

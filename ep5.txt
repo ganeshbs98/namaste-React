@@ -1,0 +1,26 @@
+folder structuure 
+->we have src where we will have components and other folder files.
+
+
+if you want to use the file in another file first you need to export the file using
+ the following statement
+"export default name of the file/component"
+
+There are 2 types of import and export-
+
+-Default export/import -onde ond statement baribaudu  multiple agalla
+ex:"export default name of the file/component"
+ex:import component from your path.
+
+-Named export- named ali const munde export hakdre its a named export.
+Ex:export const name of the component 
+ex:import {name of the component} from the file name.
+when ever u your having named export you need import using {} and the name of the component inside the brackets
+
+React Hooks:
+they are normal js utility functions written  by facebook developers.
+there are 2 very important hooks in react hooks.
+1.usestate()-superpowerfull state variables in react
+2.useEffect()-
+
+
