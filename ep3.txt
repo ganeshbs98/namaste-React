@@ -7,7 +7,7 @@ here we can give the name what we want and the value should be the correct comma
     "build":"parcel build index.html",
 
 
-React.createElement("div",{},"...children")==> it is nothing but an Object=> when you render it will be con verted into html content.
+React.createElement("div",{},"...children")==> it is nothing but an Object=> when you render it will be converted into html content.
 
 JSX-is a javascript syntax which is easier to create react element.it is not a part of react. it is html like syntax.
 there is difference between react and JSX.

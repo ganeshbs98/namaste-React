@@ -24,3 +24,7 @@ there are 2 very important hooks in react hooks.
 2.useEffect()-
 
 
+why react is faster??
+becuase due to react fiber the new reconcilation algorithm which findout the differnce between new virtual dom and old dom(reconciliation) and then update the changes
+
+
