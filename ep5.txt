@@ -22,6 +22,9 @@ they are normal js utility functions written  by facebook developers.
 there are 2 very important hooks in react hooks.
 1.usestate()-superpowerfull state variables in react
 2.useEffect()-
+-if no dependency array=> useeffect is called on every component render
+-if the dependency array[] =>useeffect is called only on initial of the render(just once)
+and if we put inside the dependency array it will be called only when the dependecy input changes
 
 
 why react is faster??

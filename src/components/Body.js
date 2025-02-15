@@ -1,16 +1,14 @@
 import react, { useEffect } from "react";
 import { useState } from "react";
 import { RestaurantCard } from "./RestaurantCard";
-import ListOfRestaurant from "../utils/mockdata";
 import Shimmer from "./shimmer";
 export const Body = () => {
   const [list, setList] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [filterest,setFilterest]=useState([])
-
   useEffect(() => {
     fetchData();
-  }, []);
+  });
   const fetchData = async () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.022120301504632&lng=80.1750718639601&page_type=DESKTOP_WEB_LISTING"
@@ -26,7 +24,7 @@ export const Body = () => {
     );
   };
   if (list.length === 0) {
-    return <Shimmer />;
+    return <Shimmer/>
   }
   return (
     <div className="body">
